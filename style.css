@@ -1,0 +1,271 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Martel Sans", sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url(https://wallpapercat.com/w/full/d/d/f/46447-3840x2160-desktop-4k-squid-game-wallpaper.jpg);
+    height: 84vh;
+    width: 100%;
+    background-size: cover; 
+    background-position: center center;
+    background-position-y: 2px;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.main .box {
+    height: 84vh;
+    width: 100%;
+    opacity: 0.4;
+    background-color: black;
+    top: 0;
+    position: absolute;
+}
+
+nav {
+    max-width: 80vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 62px;
+}
+
+nav img {
+    color: red;
+    width: 149px;
+    position: relative;
+    z-index: 10;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+}
+
+.hero {
+    height: calc(100% - 62px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+    font-family: "Martel Sans", sans-serif;
+    padding: 0 30px;
+    gap: 25px;
+}
+
+.hero > :nth-child(1) {
+    font-weight: 900;
+    font-size: 48px;
+    filter: drop-shadow(2px 5px 2px black);
+}
+
+.hero > :nth-child(2) {
+    font-weight: 600;
+    font-size: 22px;
+    color: rgb(255, 0, 0);
+    filter: drop-shadow(2px 5px 2px black);
+}
+
+.hero > :nth-child(3) {
+    font-weight: 550;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    filter: drop-shadow(2px 5px 2px black);
+}
+
+.separation {
+    height: 11px;
+    background-color: rgb(36, 36, 36);
+}
+
+.btn {
+    padding: 6px 16px;
+    font-weight: bold;
+    background-color: white;
+    border-radius: 6px;
+    ;
+}
+
+.btn1 {
+    background-color: red;
+    color: white;
+}
+
+.btn3 {
+    background-color: red;
+    color: white;
+    padding: 4px 20px 10px ;
+    font-size: 20px;
+    border-radius: 5px;
+    gap: 14px;
+    align-items: center;
+}
+
+.main input {
+    padding: 11px 98px 10px 14px;
+    font-size: 19px;
+    color: aliceblue;
+    border-radius: 6px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.393);
+}
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+/* Section styles (applies to all 3 sections) */
+.first, .second, .third {
+    display: flex;
+    justify-content: center;
+    max-width: 65vw;
+    color: white;
+    align-items: center;
+    margin: auto;
+    padding-top: 92px;
+    padding-bottom: 56px;
+}
+
+.secimage {
+    position: relative;
+}
+
+.secimage img {
+    height: 200px;
+    padding-left: 140px;
+    object-fit: contain;
+    z-index: 1;
+    position: relative;
+}
+
+.secimage video {
+    position: absolute;
+    top: 35px;
+    right: 62px;
+    height: 141px;
+}
+
+.second{
+    flex-direction: row;
+    gap: 69px;
+}
+
+.second > div :first-child{
+color: rgb(244, 3, 3);
+font-size: 39px;
+font-weight: bolder;
+}
+
+.second > div :nth-child(3){
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+    font-weight: bolder;
+    }
+
+.third video {
+    position: absolute;
+    top: 100px;
+    right: 2px;
+    height: 159px;
+}
+
+section > div:first-child {
+    display: flex;
+    flex-direction: column;
+}
+
+section > div:first-child > :nth-child(1) {
+    font-size: 39px;
+    color: red;
+    font-weight: bolder;
+    
+}
+
+section > div:first-child > :nth-child(2) {
+    font-size: 16px;
+    font-weight: bolder;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.faq h2{
+    font-size: 48px;
+}
+
+
+.faq{
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 34px;
+    font-size: 19px;
+    /* font-weight: bold; */
+}
+
+.faqbox:hover{
+    background-color: red;
+}
+
+.faqbox svg{
+    filter: invert();
+}
+
+
+
+.faqbox{
+    display: flex;
+    background-color: #2d2d2d;
+    color: rgb(255, 255, 255);
+    padding: 17px ;
+    margin: 17px auto;
+    max-width: 69vw;
+    justify-content: space-between;
+    cursor: pointer;
+}
+footer{
+    color: white;
+    max-width: 60vw;
+    margin: auto;
+    padding: 14px;
+}
+
+footer .questions{
+    padding: 34px 0px;
+}
+
+
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+}
+
+.footer a{
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    padding: 10px 0px;
+}
+
+.footeritem{
+    display: flex;
+    flex-direction: column;
+}
+
+.footeritem a:hover{
+    text-decoration: underline;
+    color: red;
+    font-weight: 700;
+    font-size: 15px;
+}
